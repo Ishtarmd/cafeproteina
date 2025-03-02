@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Etiqueta Nutricional - Bebida Láctea de Café</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header svg {
+            width: 50px;
+            height: auto;
+            vertical-align: middle;
+        }
+        h1 {
+            font-size: 2em;
+            margin: 10px 0;
+        }
+        .nutrition {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        .ingredients, .additional-info {
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        .traceability {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .traceability h2 {
+            text-align: center;
+        }
+        .timeline {
+            display: flex;
+            overflow-x: auto;
+            padding: 10px 0;
+            position: relative;
+        }
+        .timeline-item {
+            flex: 0 0 auto;
+            text-align: center;
+            margin: 0 10px;
+        }
+        .timeline-item .circle {
+            width: 50px;
+            height: 50px;
+            background-color: #cfe8a9;
+            border: 2px solid #4a7c2a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 5px;
+            font-size: 0.8em;
+        }
+        .timeline-item p {
+            font-size: 0.75em;
+            margin: 0;
+        }
+        /* Línea de fondo para la línea del tiempo */
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #4a7c2a;
+            top: 50%;
+            left: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <!-- Dibujo de granos de café (SVG) -->
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32 2C19.2 2 9 12.2 9 25c0 10.1 6.1 18.9 15 22.8V62h20V47.8c8.9-3.9 15-12.7 15-22.8C55 12.2 44.8 2 32 2z" fill="#6f4e37"/>
+            <path d="M32 10c9.4 0 17 7.6 17 17s-7.6 17-17 17-17-7.6-17-17 7.6-17 17-17m0-4c-11 0-20 9-20 20s9 20 20 20 20-9 20-20-9-20-20-20z" fill="#8b5e3c"/>
+        </svg>
+        <h1>Etiqueta Nutricional<br>Bebida Láctea de Café</h1>
+    </div>
+    
+    <div class="nutrition">
+        <h2>Información Nutricional (Por 100 ml)</h2>
+        <table>
+            <tr>
+                <th>Componente</th>
+                <th>Cantidad</th>
+            </tr>
+            <tr>
+                <td>Valor energético</td>
+                <td>233 kj / 55 kcal</td>
+            </tr>
+            <tr>
+                <td>Grasas</td>
+                <td>1.1 gr</td>
+            </tr>
+            <tr>
+                <td>Grasas saturadas</td>
+                <td>0.6 gr</td>
+            </tr>
+            <tr>
+                <td>Hidratos de carbono</td>
+                <td>3.7 gr</td>
+            </tr>
+            <tr>
+                <td>Azúcares</td>
+                <td>3.2 gr</td>
+            </tr>
+            <tr>
+                <td>Proteínas</td>
+                <td>7.7 gr</td>
+            </tr>
+            <tr>
+                <td>Sal</td>
+                <td>0.07 gr</td>
+            </tr>
+            <tr>
+                <td>Calcio</td>
+                <td>218 mg (27% VRN*)</td>
+            </tr>
+        </table>
+        <p>*VRN: Valores de Referencia de Nutrientes. Óvalo sanitario: CH 2406</p>
+        
+        <div class="additional-info">
+            <p><strong>Condiciones de conservación:</strong> Mantener refrigerado a una temperatura máxima de +8°C</p>
+            <p><strong>Contenido de cafeína:</strong> 150 mg por vaso</p>
+            <p><strong>Denominación legal:</strong> Bebida láctea pasteurizada de café con leche y edulcorante. Sin lactosa. Sin azúcares añadidos.</p>
+        </div>
+        
+        <div class="ingredients">
+            <p><strong>Ingredientes:</strong> Proteínas de la leche (53%), leche desnatada (27%), café arábica de producción sostenible (19%), edulcorantes (ciclamato de sodio y acesulfamo potásico) y enzima lactasa.</p>
+            <p><em>Agítalo, levanta la tapa y tómalo muy frío.</em></p>
+            <p><strong>Fabricado en Suiza.</strong></p>
+        </div>
+    </div>
+    
+    <div class="traceability">
+        <h2>Trazabilidad del Proceso</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="circle">1</div>
+                <p>Pastoreo</p>
+            </div>
+            <div class="timeline-item">
+                <div class="circle">2</div>
+                <p>Ordeñado</p>
+            </div>
+            <div class="timeline-item">
+                <div class="circle">3</div>
+                <p>Enfriamiento y Transporte<br>en frío a Fábrica</p>
+            </div>
+            <div class="timeline-item">
+                <div class="circle">4</div>
+                <p>Recolección del Café</p>
+            </div>
+            <div class="timeline-item">
+                <div class="circle">5</div>
+                <p>Tostado, Secado<br>y Molienda</p>
+            </div>
+            <div class="timeline-item">
+                <div class="circle">6</div>
+                <p>Transporte del Café</p>
+            </div>
+            <div class="timeline-item">
+                <div class="circle">7</div>
+                <p>Pasteurización de la Leche</p>
+            </div>
+            <div class="timeline-item">
+                <div class="circle">8</div>
+                <p>Filtración y Separación</p>
+            </div>
+            <div class="timeline-item">
+                <div class="circle">9</div>
+                <p>Hidrólisis</p>
+            </div>
+            <div class="timeline-item">
+                <div class="circle">10</div>
+                <p>Fabricación del Envase<br>mediante 3D</p>
+            </div>
+            <div class="timeline-item">
+                <div class="circle">11</div>
+                <p>Rellenado del Envase</p>
+            </div>
+            <div class="timeline-item">
+                <div class="circle">12</div>
+                <p>Preparación del Paquete</p>
+            </div>
+            <div class="timeline-item">
+                <div class="circle">13</div>
+                <p>Máquina Expendedora</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
