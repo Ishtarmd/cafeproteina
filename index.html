@@ -67,17 +67,14 @@
             text-align: center;
             margin: 0 10px;
         }
-        .timeline-item .circle {
+        .cup {
             width: 50px;
             height: 50px;
-            background-color: #cfe8a9;
-            border: 2px solid #4a7c2a;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             margin: 0 auto 5px;
-            font-size: 0.8em;
+        }
+        .cup svg {
+            width: 100%;
+            height: 100%;
         }
         .timeline-item p {
             font-size: 0.75em;
@@ -93,6 +90,37 @@
             top: 50%;
             left: 0;
             z-index: -1;
+        }
+        /* Estilos para la encuesta */
+        .survey {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .survey h2 {
+            margin-bottom: 15px;
+        }
+        .survey button {
+            background-color: #4a7c2a;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .survey button:hover {
+            background-color: #36701e;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.8em;
+            color: #777;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -165,59 +193,135 @@
         <h2>Trazabilidad del Proceso</h2>
         <div class="timeline">
             <div class="timeline-item">
-                <div class="circle">1</div>
+                <div class="cup">
+                    <!-- Icono de vaso de café -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M3 8h18v11a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" fill="#cfe8a9" stroke="#4a7c2a" stroke-width="1"/>
+                        <path d="M5 8V6a4 4 0 018 0v2" fill="none" stroke="#4a7c2a" stroke-width="1"/>
+                    </svg>
+                </div>
                 <p>Pastoreo</p>
             </div>
             <div class="timeline-item">
-                <div class="circle">2</div>
+                <div class="cup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M3 8h18v11a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" fill="#cfe8a9" stroke="#4a7c2a" stroke-width="1"/>
+                        <path d="M5 8V6a4 4 0 018 0v2" fill="none" stroke="#4a7c2a" stroke-width="1"/>
+                    </svg>
+                </div>
                 <p>Ordeñado</p>
             </div>
             <div class="timeline-item">
-                <div class="circle">3</div>
+                <div class="cup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M3 8h18v11a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" fill="#cfe8a9" stroke="#4a7c2a" stroke-width="1"/>
+                        <path d="M5 8V6a4 4 0 018 0v2" fill="none" stroke="#4a7c2a" stroke-width="1"/>
+                    </svg>
+                </div>
                 <p>Enfriamiento y Transporte<br>en frío a Fábrica</p>
             </div>
             <div class="timeline-item">
-                <div class="circle">4</div>
+                <div class="cup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M3 8h18v11a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" fill="#cfe8a9" stroke="#4a7c2a" stroke-width="1"/>
+                        <path d="M5 8V6a4 4 0 018 0v2" fill="none" stroke="#4a7c2a" stroke-width="1"/>
+                    </svg>
+                </div>
                 <p>Recolección del Café</p>
             </div>
             <div class="timeline-item">
-                <div class="circle">5</div>
+                <div class="cup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M3 8h18v11a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" fill="#cfe8a9" stroke="#4a7c2a" stroke-width="1"/>
+                        <path d="M5 8V6a4 4 0 018 0v2" fill="none" stroke="#4a7c2a" stroke-width="1"/>
+                    </svg>
+                </div>
                 <p>Tostado, Secado<br>y Molienda</p>
             </div>
             <div class="timeline-item">
-                <div class="circle">6</div>
+                <div class="cup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M3 8h18v11a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" fill="#cfe8a9" stroke="#4a7c2a" stroke-width="1"/>
+                        <path d="M5 8V6a4 4 0 018 0v2" fill="none" stroke="#4a7c2a" stroke-width="1"/>
+                    </svg>
+                </div>
                 <p>Transporte del Café</p>
             </div>
             <div class="timeline-item">
-                <div class="circle">7</div>
-                <p>Pasteurización de la Leche</p>
+                <div class="cup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M3 8h18v11a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" fill="#cfe8a9" stroke="#4a7c2a" stroke-width="1"/>
+                        <path d="M5 8V6a4 4 0 018 0v2" fill="none" stroke="#4a7c2a" stroke-width="1"/>
+                    </svg>
+                </div>
+                <p>Pasteurización<br>de la Leche</p>
             </div>
             <div class="timeline-item">
-                <div class="circle">8</div>
+                <div class="cup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M3 8h18v11a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" fill="#cfe8a9" stroke="#4a7c2a" stroke-width="1"/>
+                        <path d="M5 8V6a4 4 0 018 0v2" fill="none" stroke="#4a7c2a" stroke-width="1"/>
+                    </svg>
+                </div>
                 <p>Filtración y Separación</p>
             </div>
             <div class="timeline-item">
-                <div class="circle">9</div>
+                <div class="cup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M3 8h18v11a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" fill="#cfe8a9" stroke="#4a7c2a" stroke-width="1"/>
+                        <path d="M5 8V6a4 4 0 018 0v2" fill="none" stroke="#4a7c2a" stroke-width="1"/>
+                    </svg>
+                </div>
                 <p>Hidrólisis</p>
             </div>
             <div class="timeline-item">
-                <div class="circle">10</div>
+                <div class="cup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M3 8h18v11a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" fill="#cfe8a9" stroke="#4a7c2a" stroke-width="1"/>
+                        <path d="M5 8V6a4 4 0 018 0v2" fill="none" stroke="#4a7c2a" stroke-width="1"/>
+                    </svg>
+                </div>
                 <p>Fabricación del Envase<br>mediante 3D</p>
             </div>
             <div class="timeline-item">
-                <div class="circle">11</div>
+                <div class="cup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M3 8h18v11a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" fill="#cfe8a9" stroke="#4a7c2a" stroke-width="1"/>
+                        <path d="M5 8V6a4 4 0 018 0v2" fill="none" stroke="#4a7c2a" stroke-width="1"/>
+                    </svg>
+                </div>
                 <p>Rellenado del Envase</p>
             </div>
             <div class="timeline-item">
-                <div class="circle">12</div>
+                <div class="cup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M3 8h18v11a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" fill="#cfe8a9" stroke="#4a7c2a" stroke-width="1"/>
+                        <path d="M5 8V6a4 4 0 018 0v2" fill="none" stroke="#4a7c2a" stroke-width="1"/>
+                    </svg>
+                </div>
                 <p>Preparación del Paquete</p>
             </div>
             <div class="timeline-item">
-                <div class="circle">13</div>
+                <div class="cup">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M3 8h18v11a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" fill="#cfe8a9" stroke="#4a7c2a" stroke-width="1"/>
+                        <path d="M5 8V6a4 4 0 018 0v2" fill="none" stroke="#4a7c2a" stroke-width="1"/>
+                    </svg>
+                </div>
                 <p>Máquina Expendedora</p>
             </div>
         </div>
     </div>
+    
+    <div class="survey">
+        <h2>¿Te ha gustado la presentación?</h2>
+        <button type="button">Sí</button>
+        <button type="button">Me ha encantado</button>
+    </div>
+    
+    <footer>
+        <p>Fabricado en Huelva, España</p>
+    </footer>
     
 </body>
 </html>
